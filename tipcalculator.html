@@ -234,6 +234,8 @@
              percentage.innerText = slider.value + '%'
              const tipMount = (slider.value / 100) * dollarinput.value
              tipamountdisplay.innerHTML = tipMount.toFixed(2)
+             totalbilldisplay.innerHTML = (Number(tipMount) + Number(dollarinput.value)).toFixed(2)
+
 
              
              
