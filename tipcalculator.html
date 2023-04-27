@@ -56,6 +56,7 @@
             background-color: white;
             height: 100%;
             border: 2px solid #eaecef;
+            
         }
         .tiprange {
             display: flex;
@@ -90,6 +91,7 @@
             cursor: ew-resize;
             box-shadow: 2px 0 2px 2px #555;
             transition: .3s ease-in-out;
+        
         } */
         .slider::-webkit-progress-bar {
             background-color: red;
@@ -181,14 +183,14 @@
                         <h5>$</h5>
                     </div>
 
-                    <input class="dollarinput " type="number" value="number" name="" id="dollarinput"
-                        onchange="calculate()">
+                    <input class="form-control dollarinput "   name="" id="dollarinput"
+                        oninput="calculate()">
                 </div> <br>
 
                 <div class="tiprange d-flex container w-100">
                     <h6 class="tiprangetext">Tip:</h6>
-                    <input class="slider w-100 " color="red" type="range" min="0" max="100" name="" id="slider" onchange="calculate()">
-                    <h6 id="percentage" class="percentage">50%</h6>
+                    <input class="slider w-100 " color="red" type="range" value="0" min="0" max="100" name="" id="slider" onchange="calculate()">
+                    <h6 id="percentage" class="percentage">0%</h6>
                 </div> <br>
 
                 <hr> <br>
@@ -201,18 +203,17 @@
                         Tip amount
                     </div>
 
-                    <div id="tipamountdisplay" class="tipamountdisplay">
-
-                    </div>
+                    <div id="tipamountdisplay" class="tipamountdisplay"> </div>
+                
                 </div> <br>
+
                 <div class="resultTitleContainer container ">
                     <div class="totalbilltext">
                         Total bill with Tip
                     </div>
 
-                    <div id="totalbilldisplay" class="totalbilldisplay">
-
-                    </div>
+                    <div id="totalbilldisplay" class="totalbilldisplay"></div>
+                
                 </div>
 
 
